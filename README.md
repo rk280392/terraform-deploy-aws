@@ -1,26 +1,27 @@
-1 - Install git
+1 - Install git     
 apt-install git
 
-2 - Clone the repo
+2 - Clone the repo     
 git clone https://github.com/rk280392/terraform-deploy-aws.git
 
 
-3 - Install python3-pip
+3 - Install python3-pip     
 apt install python3-pip
 
-4 - Install configure awscli
+4 - Install configure awscli     
 pip3 install awscli
 
 Look for any warnings, it might show the [ath where awscli is installed and instructing to add it. In my case it was installed in /home/vagrant/.local/bin, so had to add it to /etc/environment
 
-5 - vim /etc/environment
+5 - vim /etc/environment  
 PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/vagrant/.local/bin"
 
-After editing, save and close, then do source /etc/environment
 
-6 - aws configure --profile learning
+After editing, save and close, then do source /etc/environment   
 
-Put your access_key and secret_access_kwy with default region when asked.
+6 - aws configure --profile learning  
+
+Put your access_key and secret_access_key with default region when asked.
 
 [learning]
 aws_access_key_id = REDACTED  
