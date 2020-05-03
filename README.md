@@ -33,17 +33,17 @@ output = json
 
 7 - Test the setup
 
-export AWS_DEFAULT_PROFILE=learning
-export AWS_PROFILE=learning
-aws sts get-caller-identity
-aws ec2 describe-instances
+export AWS_DEFAULT_PROFILE=learning   
+export AWS_PROFILE=learning   
+aws sts get-caller-identity   
+aws ec2 describe-instances   
 
 8 - Install terraform
 https://www.terraform.io/downloads.html
 
-wget https://releases.hashicorp.com/terraform/0.12.24/terraform_0.12.24_linux_amd64.zip
-unzip terraform_0.12.24_linux_amd64.zip
-sudo v terraform /usr/bin
+wget https://releases.hashicorp.com/terraform/0.12.24/terraform_0.12.24_linux_amd64.zip    
+unzip terraform_0.12.24_linux_amd64.zip  
+sudo v terraform /usr/bin   
 
 9 - place your aws .pem file in project directory and make changes the the key-pair script. Replace your kubernetes.pem with your file.pem name.
 
