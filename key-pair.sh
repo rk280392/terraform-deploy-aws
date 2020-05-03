@@ -1,5 +1,8 @@
 KEYPATH=".sekrets"
 KEYNAME="deploy-aws"
+
+mkdir $KEYPATH
+mv "kubernetes.pem" $KEYPATH
 chmod 755 $KEYPATH/kubernetes.pem 
 openssl genrsa -out "$KEYPATH/kubernetes.pem" 4096
 openssl rsa -in "$KEYPATH/kubernetes.pem" -pubout > "$KEYPATH/kubernetes.pub"

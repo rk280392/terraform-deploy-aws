@@ -43,13 +43,15 @@ wget https://releases.hashicorp.com/terraform/0.12.24/terraform_0.12.24_linux_am
 unzip terraform_0.12.24_linux_amd64.zip
 mv terraform /usr/bin
 
-9 - Run key-pair.sh
+9 - place your aws .pem file in current directory
+
+10 - Run key-pair.sh
 
 It will create a key pair and install it on your aws server 
 
-10 - run add-env.sh
+11 - run add-env.sh
 
-11 - run terraform plan
+12 - run terraform plan
 
-12 - terraform apply
+13 - terraform apply
 
