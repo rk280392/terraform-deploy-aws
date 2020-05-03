@@ -1,0 +1,21 @@
+aws configure --profile learning
+[default]
+aws_access_key_id = REDACTED
+aws_secret_access_key = REDACTED
+
+[learning]
+aws_access_key_id = REDACTED
+aws_secret_access_key = REDACTED
+
+[default]
+region = us-west-2
+output = json
+[profile learning]
+region = us-east-2
+output = json
+
+
+export AWS_DEFAULT_PROFILE=learning
+export AWS_PROFILE=learning
+aws sts get-caller-identity
+aws ec2 describe-instances
