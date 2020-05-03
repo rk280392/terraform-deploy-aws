@@ -23,13 +23,13 @@ After editing, save and close, then do source /etc/environment
 Put your access_key and secret_access_kwy with default region when asked.
 
 [learning]
-aws_access_key_id = REDACTED
+aws_access_key_id = REDACTED  
 aws_secret_access_key = REDACTED
 
-[default]
-[profile learning]
-region = us-east-2
-output = json
+[default]  
+[profile learning]  
+region = us-east-2  
+output = json  
 
 7 - Test the setup
 
