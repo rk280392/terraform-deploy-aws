@@ -20,6 +20,8 @@ After editing, save and close, then do source /etc/environment
 
 6 - aws configure --profile learning
 
+Put your access_key and secret_access_kwy with default region when asked.
+
 [learning]
 aws_access_key_id = REDACTED
 aws_secret_access_key = REDACTED
@@ -43,7 +45,7 @@ wget https://releases.hashicorp.com/terraform/0.12.24/terraform_0.12.24_linux_am
 unzip terraform_0.12.24_linux_amd64.zip
 sudo v terraform /usr/bin
 
-9 - place your aws .pem file in project directory
+9 - place your aws .pem file in project directory and make changes the the key-pair script. Replace your kubernetes.pem with your file.pem name.
 
 10 - Run key-pair.sh
 
