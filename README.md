@@ -17,7 +17,9 @@ Look for any warnings, it might show the [ath where awscli is installed and inst
 PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/vagrant/.local/bin"
 
 
-After editing, save and close, then do source /etc/environment   
+After editing, save and close, then do 
+
+source /etc/environment   
 
 6 - aws configure --profile learning  
 
